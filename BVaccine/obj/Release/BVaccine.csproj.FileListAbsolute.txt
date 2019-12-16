@@ -1,0 +1,6 @@
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\BVaccine.dll
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\BVaccine.pdb
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\AjaxControlToolkit.dll
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Release\BVaccine.csprojResolveAssemblyReference.cache
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Release\BVaccine.dll
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Release\BVaccine.pdb

@@ -1,0 +1,18 @@
+c:\users\kashif\documents\visual studio 2012\Projects\BVaccine\BVaccine\bin\BVaccine.dll
+c:\users\kashif\documents\visual studio 2012\Projects\BVaccine\BVaccine\bin\BVaccine.pdb
+c:\users\kashif\documents\visual studio 2012\Projects\BVaccine\BVaccine\obj\Debug\BVaccine.csprojResolveAssemblyReference.cache
+c:\users\kashif\documents\visual studio 2012\Projects\BVaccine\BVaccine\obj\Debug\BVaccine.dll
+c:\users\kashif\documents\visual studio 2012\Projects\BVaccine\BVaccine\obj\Debug\BVaccine.pdb
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\BVaccine.dll
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\BVaccine.pdb
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Debug\BVaccine.csprojResolveAssemblyReference.cache
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Debug\BVaccine.dll
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\obj\Debug\BVaccine.pdb
+C:\Users\user.F31322\Desktop\BVaccine\BVaccine\bin\AjaxControlToolkit.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\bin\BVaccine.dll.config
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\bin\BVaccine.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\bin\BVaccine.pdb
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\bin\AjaxControlToolkit.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\obj\Debug\BVaccine.csprojResolveAssemblyReference.cache
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\obj\Debug\BVaccine.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\Maamta LW Compliance\BVaccine\obj\Debug\BVaccine.pdb

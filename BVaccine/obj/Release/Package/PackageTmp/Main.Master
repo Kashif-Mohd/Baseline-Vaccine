@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="BVaccine.Main" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Vaccinations</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <%--<link rel="stylesheet" href="css/style.css" />--%>
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <script src="//use.edgefonts.net/bebas-neue.js"></script>
+
+    <!-- Custom Fonts & Icons -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/icomoon-social.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <style>
+        .Background
+        {
+            background-color: Black;
+            filter: alpha(opacity=90);
+            opacity: 0.8;
+        }
+        .Popup
+        {
+            background-color: #FFFFFF;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 400px;
+            height: 350px;
+        }
+        .form {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.2);
+            max-width: 660px;
+            margin: 0;
+            /*padding: 0px;*/
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .input {
+          width: 360px;
+          margin:auto;
+          height: 450px;
+          /*padding: 3% 0 0;*/
+        }
+        .thStyle {
+            height: 60px;
+            width:100%; 
+            font-family: Calibri;
+            font-size: 20px;
+            color: #1b2d3d;
+        }
+
+        .tdStyle {
+            padding-left: 15px;
+                     
+        }
+
+        .tdText {
+            /* background-color:#e3eeff;*/
+            color: black;
+        }
+
+        .txtbxRd {
+            /*border-radius: 5px;
+            border: 2px solid #6BB9F0;
+            padding: 0px;
+            height: 31px;*/
+        }
+    </style>
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManger1" runat="Server"></asp:ScriptManager>
+        <div>
+            <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/vppt.png" />
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active" runat="server" id="home"><a href="Home.aspx">Home</a></li>
+                            <li runat="server" id="FirstEntry"><a href="FirstEntry.aspx">First Entry</a></li>
+                            <li runat="server" id="SecondEntry"><a href="SecondEntry.aspx">Second Entry</a></li>
+
+                            <li class="dropdown" runat="server" id="Setting">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<i class="icon-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><asp:Label ID="lbl" runat="server" Style="margin-left: 12%; font-weight: 700"></asp:Label></li>
+                                    <%--<li><a href="#" id="a"></a></li> --%>
+                                    <li><asp:LinkButton ID="Button1" runat="server">Add New User</asp:LinkButton></li>
+                                    <cc1:ModalPopupExtender ID="ModalPopup" runat="server" PopupControlID="pnl1" TargetControlID="Button1" CancelControlID="Button2" BackgroundCssClass="Background"></cc1:ModalPopupExtender>                              
+                                    <%--<li><a href="#">Change Password</a></li>--%>
+                                    <li class="divider"></li>
+                                    <li><a href="loginform.aspx">Log Out</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!--/header-->
+
+            <asp:Panel ID="pnl1" runat="server" CssClass="form" align="Center" style="display:none">
+                <iframe id="irm1" class="input" frameborder="0" scrolling="no" src="RegistrationForm.aspx" runat="server"></iframe>
+                <br />
+                <button id="Button2" runat="server">Close</button>
+            </asp:Panel>
+
+
+
+
+
+
+            <div class="section" style="margin-top: 40px">
+
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+            </div>
+        </div>
+        <!-- End Our Clients -->
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <!-- Footer -->
+        </asp:ContentPlaceHolder>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+
+    </form>
+</body>
+</html>
